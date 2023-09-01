@@ -1,16 +1,18 @@
 body{
-background-color: rgb(224, 114, 114);
+background-color: lightgreen;
 
 }
 
 p{
-color: lightblue;
+color: black;
 
 }
 
 
 h1{
     text-align: center;
+font-size: 22px;
+font-family: arial;
 }
 
 p{
@@ -26,5 +28,20 @@ h2{
 }
 
 h3{
-    text-align: center;
+    text-align: right;
 }
+
+.altX{
+    text-align: right;
+}
+
+ a{
+    text-decoration: none;
+ }
+
+ .border{
+    border: 2px solid black;
+    width: 650px;
+    margin: 0 auto;
+    padding: 8px;
+ }
