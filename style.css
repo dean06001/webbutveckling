@@ -11,12 +11,13 @@ color: black;
 
 h1{
     text-align: center;
-font-size: 22px;
+font-size: 40px;
 font-family: arial;
 }
 
 p{
     text-align: center;
+    font-size: 13px;
 }
 
 .altP{
@@ -28,7 +29,7 @@ h2{
 }
 
 h3{
-    text-align: right;
+    text-align: center;
 }
 
 .altX{
@@ -37,11 +38,66 @@ h3{
 
  a{
     text-decoration: none;
+    margin: auto;
+    color:blue;
  }
 
  .border{
     border: 2px solid black;
-    width: 650px;
+    width: 300px;
     margin: 0 auto;
-    padding: 8px;
+    padding: 20px;
+    font-size: 15px;
  }
+
+ .wrapper{
+    background-color: bisque;
+    width: 90%;
+    margin:0 auto;
+    display:grid;
+    grid-template-rows: 80px 50px auto 50px;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer"
+ }
+
+header{
+    background-color: burlywood;
+    grid-area: header;
+}
+
+nav{
+    background-color: darkorange;
+    grid-area: nav;
+}
+
+nav > ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+    margin: 0;
+    padding: 0%;
+}
+
+nav li{
+    list-style-type: none;
+    text-align: center;
+    display: grid;
+    align-items: stretch; 
+    margin: auto;
+}
+
+main{
+    background-color: khaki;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+}
+
+footer{
+    background-color: thistle;
+    grid-area: footer;
+}
