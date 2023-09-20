@@ -1,0 +1,12 @@
+table, th, td{
+    border: 1px solid black; 
+    border-collapse: collapse;
+    padding: 150px;
+    margin: auto;
+    table-layout: fixed;
+    width: 1000px;
+}
+
+tr:nth-child(4){
+    background-color: green;
+}
