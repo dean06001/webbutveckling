@@ -1,0 +1,8 @@
+.H1border{
+    border: 2px solid black;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 30px;
+    
+}
