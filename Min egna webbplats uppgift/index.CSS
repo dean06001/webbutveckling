@@ -1,0 +1,146 @@
+.wrapper{/*Detta används för att formatera websidan*/
+    grid-template-rows: 100px 80px auto auto;/*Detta är mallen till layouten*/
+    grid-template-areas: /*Den här ställer in de individuella områdena i layouten. Som du kan se under*/
+    "header"
+    "nav"
+    "main"
+    "footer";
+    position: fixed; /*Den här gör så att websidan förblir de samma i postion även när användaren scrollar*/
+    display: grid; /*Detta gör så att griden visnas i en layout*/
+}
+
+h1{ /*huvudrubriken*/
+    text-align: center; /*Detta gör så att huvudrubriken hamnar i mitten*/
+    font-size: 40px; /*Detta är text storleken*/ 
+}
+
+h2, h3{/*underubriker*/
+    color: white; /*Text färgen på huvudrubrikerna h2, h3*/
+}
+
+ul{ /*Detta definierar hur listan ska se ut*/
+    text-decoration: none; /*Detta tar bort understräck och decorationer från texten*/
+    list-style: none;/*Detta tar bort punktlistan*/
+    padding: 15px; /*Det här ställer in mellanrummet runt texten. */
+    width: 1860px;/*Detta ställer in breden till listan*/
+    margin:auto;/*Detta ställer in marginalen för alla delar av listan till att beräknas automatiskt baserat på innehållets bredd.*/
+    display:grid;/*Detta gör så att listan kan visnas i en layout*/
+    grid-template-columns: 1fr 1fr 1fr;/*Detta väljer hur många columer listan kommer att ha. Och hur bred den är*/
+    text-align: center;/*Detta sätter texten i mitten*/
+    border-right: 2px solid black;/*Detta skapar ett svart sträck på högra sidan*/
+    border-bottom: 2px solid black;/*Detta skapar ett svart sträck på under sidan*/
+    border-left: 2px solid black;/*Detta skapar ett svart sträck på vänstra sidan*/
+    background-color: #2a2f33;/*Detta är färgen i backgrunden*/
+}
+
+.li1,.li3{/*Två delar av listan i menyn. Detta är också en class*/
+    border: 2px solid black;/*Detta sätter en 2px border runt innehållet av li1, li3*/
+    padding: 10px;/*Detta gör utrymme mellan innehållet och bordern*/
+    border-radius: 15px;/*Detta gör kanterna av bordern runda*/
+    background-color: lightseagreen;/*bakgrunds färg*/
+}
+
+.li2{/*Detta är en del av listan i menyn. Detta är också en class*/
+    border-bottom: 2px solid black;/*Detta skapar ett svart sträck under innehållet*/
+    border-top: 2px solid black; /*Detta skapar ett svart sträck över innehållet*/
+    padding: 10px;/*Detta gör utrymme mellan innehållet och bordern*/
+    border-radius: 15px;/*Detta gör kanterna av bordern runda*/
+    background-color:lightseagreen;/*bakgrunds färg*/
+}
+
+ol{ /*Detta är en nummrerad lista*/
+    margin: 0; /*Detta gör vitutrymmet runt omkring till 0.*/
+    padding: 0; /*Detta gör utfyllnaden av vitutrymmet inuti innehållet till 0.*/
+    text-align: center; /*Detta lägger texten i mitten*/
+    position: absolute; /*Detta gör position en abosulte av listan*/
+    left: 49%; /*Detta placerar innehålet till 49% av sidan från vänster*/
+    font-size: 18px; /*Detta är storelken på texten*/
+}
+
+section{/*En style till huvud innehålet av websidan*/
+    color: white; /*Detta är färg till texten*/
+}
+
+header{/*En style till top delen av websidan*/
+    grid-area: header;/*Detta definierar vart den griden ligger i layouten*/
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    width: 1890px;/*Hur bred griden är*/
+    background-color: lightseagreen;/*Bakgrundfärgen till griden*/
+}
+
+table, th, td{ /*Delar av tabeln*/
+    border: 1px solid black; /*Detta skapar en 1px border runt alla delar av tabeln och innehållet*/
+    border-collapse: collapse;/*Detta gör så att bordern kollapsar runt innehållet så att de inte överlappar eller puttar i väg varandra*/
+    padding: 15px;
+    margin: auto;
+    table-layout: fixed;/*Detta gör att tabellen ska visas som en tabell med en fast layout, vilket innebär att bredden på kolumnerna är förbestämda och inte ändras när innehållet ändras.*/
+    width: 300px;/*Breden av tabelen*/
+    color: black;/*Färgen på texten inom tabeln*/
+    font-size: 20px;/*Text storleken*/
+}
+
+tr:nth-child(2),tr:nth-child(4){/*Detta gör så att alla delar av tabeln på raderna 2, 4 blir den färgen som är under*/
+    background: #5d5d85;
+}
+
+tr:nth-child(3),tr:nth-child(1){/*Detta gör så att alla delar av tabeln på raderna 3, 1 blir den färgen som är under*/
+    background-color: #8c8c9c;
+}
+
+td:nth-child(2),td:nth-child(3){/*Detta gör så att alla delar av tabeln på raderna 3, 2 får texten att hamna i mitten*/
+    text-align: center;
+}
+
+td:nth-child(1),td:nth-child(4){/*Detta gör så att alla delar av tabeln på raderna 1, 4 får texten att hamna i mitten*/
+    text-align: center;
+}
+
+nav{/*Detta definierar vart nav ligger i layouten*/
+    grid-area: nav;
+}
+
+main{
+    grid-area: main;/*Detta definierar vart main ligger i layouten*/
+    text-align: center;/*Detta gör så att all text i main hamnar i mitten*/
+}
+
+.bild{/*Detta sätter en style till classen bild. Detta är ett par bilder*/
+    margin: 0;
+    height: 50vh; /*Detta är storleken på bilderna*/
+    border: 2px solid black; /*Detta skapar en liten border runt omkring bilderna*/ 
+}
+
+footer{
+    grid-area: footer;/*Detta definierar vart footer ligger i layouten*/
+}
+
+a{/*Detta sätter en style till länkar*/
+    text-decoration: none;/*Tar bort understräck under länkarna*/
+    color: blue; /*Detta färgar länken till blå*/
+}
+
+a:link{/*Detta är alla länkar som inte är klickade på*/
+    color: black;
+}
+
+a:visited{ /*Detta är alla länkar som är klickade på*/
+    color: blue;
+}
+
+a:focus{ /*Detta är alla länkar som är i fokus*/
+    color: purple;
+}
+
+a:hover{/*Detta är alla länkar som mus är över*/
+    color: purple;
+}
+
+a:active{ /*Detta är alla länkar som man håller på att klicka*/
+    color: green;
+}
+
+body{/*Detta ger en bakgrund färg till hela websidans body*/
+    background-color: #41585a;
+}

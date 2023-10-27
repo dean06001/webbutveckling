@@ -1,0 +1,38 @@
+<!DOCTYPE html> <!--Detta är dokument typs deklarationen.  Den anger att HTML-dokumentet är skrivet i HTML-format och vilken version av HTML som används-->
+<html lang="sv"> <!--Förklarar för sök motor och webläsare att sidan är skriven i svenska-->
+    <head> <!--Det är huvudet. I head så ligger bakomvarande regler för sidan. Här anges saker som inte ska synas men som är viktiga för sidan-->
+        <title>Webbsida om mig själv</title> <!--Anger namnet på sidan-->
+        <link href="index.CSS" rel="stylesheet"> <!--En länk till en extern CSS-->
+    </head>
+    <body> <!--Detta är kroppen till websidan. Här placeras taggar som skapar strukturen till websidan-->
+        <div class="wrapper"> <!--Detta är en div class. Den fungerar som en behållare för header, nav, main, footer och huvudsektioner.-->
+            <header><!--Den här används för att visa viktiga rubriker-->
+                <h1>Meny</h1> <!--Huvudrubrik-->
+            </header>
+            <nav><!--Användas för att navigera mellan olika sidor på en webbplats. Innehåller länkar till delar av webbsidan -->
+                <ul> <!--Detta är en lista-->
+                    <li class="li1"><a href="index.html">Sida 1</a></li> <!--Li beskriver vad som finns intui en lista. Detta är de olika länkarna till delar av min websida-->
+                    <li class="li2"><a href="index2.html">Sida 2</a></li> <!--li är också indelade i 3 classer-->
+                    <li class="li3"><a href="index3.html">Sida 3</a></li>
+                </ul>
+            </nav>
+            <main> <!--Detta är det primära innehållet av websidan-->
+                <section><!--Detta används för att struktuera innehållet av websidan-->
+                    <h2>Snabbt om mig</h2> <!--Underubrik-->
+                    <p>Hej mitt namn är Dennis och jag är 17 år gammal. Jag går på Gymnasie skolan Teknikum i växjö.</p> <!--Text stycke-->
+                    <p>Jag går inom inriktningen teknik programmet och läser webbutveckling och programering.</p>
+                    <p>Just nu håller vi på att lära oss C# och html kod.</p>
+                    <p>I framtiden hoppas jag kunna arbeta inom programering och webbutveckling.</p>
+                </section>
+                <section>
+                    <h3>Klicka på bilden så tar den dig teknkium webbsida</h3> <!--Underubrik-->
+                    <a href="https://www.vaxjo.se/sidor/forskola-och-skola/gymnasieskola/teknikum.html"><!--En länk till Teknikums websida. Den är kopplad till bilden så att om du trycker på den så kommer du till websidan-->
+                        <img class="bild" src="Teknikum_Växjö.jpg" alt="teknikum"> <!--En bild på teknikum--> 
+                    </a><!--<a>Används när man ska skriva in länkar. Typ som URL-->
+                </section>
+            </main>
+            <footer><!--Detta är den delen som är längst ner på websidan-->
+            </footer>
+        </div>
+    </body> 
+</html>
