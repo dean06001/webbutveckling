@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Formulär</title>
+        <link href="Formulär.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+            </header>
+            <nav>
+            </nav>
+            <main>
+                <fieldset>
+                    <legend>Vem är du?</legend>
+                        <p>
+                            <label for="unmail">Mejladress:</label>
+                            <input type="email" name="unmail" id="unmail" required placeholder="foo@bar.com" />
+                            <strong class="required" title="Obligatorisk uppgift">*</strong>
+                        </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Logga in</legend>
+                        <form action="login.php" method="post">
+                            <p>
+                                <label for="un">Användarnamn:</label>
+                                <input name="username" id="un" required />
+                                <strong class="required" title="Obligatorisk uppgift">*</strong>
+                            </p>
+                            <p>
+                                <label for="pw">Lösenord:</label>
+                                <input name="password" type="password" id="pw" required />
+                                <strong class="required" title="Obligatorisk uppgift">*</strong>
+                            </p>
+                            <p>
+                                <input type="submit" value="Logga in" />
+                            </p>
+                        </form>
+                </fieldset>
+            </main>
+            <footer>
+            </footer>
+        </div>
+    </body>
+</html>
