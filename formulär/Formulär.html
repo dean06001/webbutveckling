@@ -13,29 +13,46 @@
             <main>
                 <fieldset>
                     <legend>Vem är du?</legend>
-                        <p>
-                            <label for="unmail">Mejladress:</label>
-                            <input type="email" name="unmail" id="unmail" required placeholder="foo@bar.com" />
-                            <strong class="required" title="Obligatorisk uppgift">*</strong>
-                        </p>
+                            <p>
+                                <label for="un">Namn:</label>
+                                <input name="username" id="un" required placeholder="Förnamn Efternamn"/>
+                                <strong class="required" title="Obligatorisk uppgift">*</strong>
+                            </p>
+                            <p>
+                                <label for="datetime">Födelsedatum</label>
+                                <input type="date">
+                                <strong class="required" title="Obligatorisk uppgift">*</strong>
+                            </p>
+                            <p>
+                                <label for="Kön">Kön:</label>
+                                <select name="Kön">
+                                    <option name="dropbox">Välj</option>
+                                    <option value="dropbox">Man</option>
+                                    <option value="dropbox">Kvinna</option>
+                                    <option value="dropbox">Annat</option>
+                                </select>
+                                <strong class="required" title="Obligatorisk uppgift">*</strong>
+                            </p>
                 </fieldset>
                 <fieldset>
                     <legend>Logga in</legend>
                         <form action="login.php" method="post">
                             <p>
-                                <label for="un">Användarnamn:</label>
-                                <input name="username" id="un" required />
+                                <label for="unmail">Mejladress:</label>
+                                <input type="email" name="unmail" id="unmail" required placeholder="foo@bar.com" />
                                 <strong class="required" title="Obligatorisk uppgift">*</strong>
                             </p>
                             <p>
                                 <label for="pw">Lösenord:</label>
-                                <input name="password" type="password" id="pw" required />
+                                <input name="password" type="password" id="pw" required placeholder="*******"/>
                                 <strong class="required" title="Obligatorisk uppgift">*</strong>
                             </p>
-                            <p>
-                                <input type="submit" value="Logga in" />
-                            </p>
                         </form>
+                </fieldset>
+                <fieldset>
+                    <p>
+                        <input name="skicka" type="submit">
+                    </p>
                 </fieldset>
             </main>
             <footer>

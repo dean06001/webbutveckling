@@ -1,8 +1,10 @@
 fieldset{
+    border-radius: 10px;
     width: 25%;
     left: 50%;
     position: relative;
     transform: translate(-50%);
+    margin-bottom: 10px;
 }
 
 label{
@@ -11,8 +13,15 @@ label{
     width: 120px;
 }
 
-input[typ="submit"]{
-    margin-left: 134px;
+input[type="date"]{
+    display: inline-block;
+    width: 172px;
+}
+
+input[name="skicka"]{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 strong{
