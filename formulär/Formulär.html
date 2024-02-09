@@ -5,9 +5,8 @@
         <link href="Formulär.css" rel="stylesheet">
     </head>
     <body>
-        <div class="wrapper">
-            <header>
-            </header>
+        <header>
+        </header>
             <nav>
             </nav>
             <main>
@@ -45,18 +44,33 @@
                             <p>
                                 <label for="pw">Lösenord:</label>
                                 <input name="password" type="password" id="pw" required placeholder="*******"/>
-                                <strong class="required" title="Obligatorisk uppgift">*</strong>
+                                <strong class="required" title="Obligatorisk uppgift">*</strong><br>
+                                <input type="checkbox" id="pw" name="password" type="text"/>
                             </p>
                         </form>
                 </fieldset>
                 <fieldset>
+                    <legend>Vad tyckte du av detta formuläret?</legend>
                     <p>
-                        <input name="skicka" type="submit">
+                        <input type="radio" name="svar" value="jätte bra" id="jätte bra" />
+                        <label for="jätte bra">Jätte bra</label>
                     </p>
+                    <p>
+                        <input type="radio" name="svar" value="okej" id="okej" />
+                        <label for="okej">Okej</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="svar" value="inte bra" id="inte bra" />
+                        <label for="inte bra">Inte bra</label>
+                    </p>                 
+                </fieldset>
+                <fieldset>
+                    <a href="Formulär2.html">
+                        <input name="skicka" type="submit">
+                    </a>
                 </fieldset>
             </main>
             <footer>
             </footer>
-        </div>
     </body>
 </html>

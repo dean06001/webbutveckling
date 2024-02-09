@@ -24,6 +24,22 @@ input[name="skicka"]{
     transform: translate(-50%);
 }
 
+label[for="jätte bra"]{
+    text-align: left;
+}
+
+label[for="okej"]{
+    text-align: left;
+}
+
+label[for="inte bra"]{
+    text-align: left;
+}
+
 strong{
     text-align: left;
+}
+
+h1{
+    text-align: center;
 }
