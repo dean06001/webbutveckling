@@ -1,0 +1,50 @@
+fieldset{
+    border-radius: 10px;
+    width: 25%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%);
+    margin-bottom: 10px;
+}
+
+label{
+    display: inline-block;
+    text-align: right;
+    width: 120px;
+}
+
+input[type="date"]{
+    display: inline-block;
+    width: 172px;
+}
+
+input[name="skicka"]{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+label[for="jätte bra"]{
+    text-align: left;
+}
+
+label[for="okej"]{
+    text-align: left;
+}
+
+label[for="inte bra"]{
+    text-align: left;
+}
+
+strong{
+    text-align: left;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.Tack{
+    font-size: 20px;
+}
