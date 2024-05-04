@@ -31,6 +31,7 @@
 
 }
 
+
 .left, .right, .middle {
     display: inline-block;
     width: calc(33.33% - 10px);
@@ -41,6 +42,35 @@
 .right{
     font-size: 30px;
     font-weight: bold;
+}
+
+.left, .middle {
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:link{
+    color: purple;
+}
+
+a:visited{
+    color: black;
+}
+
+a:focus{
+    color: red;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: green;
 }
 
 .container {
