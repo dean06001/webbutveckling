@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Formulär</title>
+        <link href="webbsida project.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="webbsidaFörstasida.html"><button>Tillbaka</button></a>
+        </header>
+            <main>
+                <fieldset>
+                        <p>
+                            <label for="un">Namn:</label>
+                            <input name="username" id="un" required placeholder="Förnamn Efternamn"/>
+                            <strong class="required" title="Obligatorisk uppgift">*</strong>
+                        </p>
+                            <p>
+                            <label for="datetime">Födelsedatum</label>
+                            <input type="date">
+                            <strong class="required" title="Obligatorisk uppgift">*</strong>
+                            </p>
+                        <p>
+                            <label for="Kön">Kön:</label>
+                            <select name="Kön">
+                                <option name="dropbox">Välj</option>
+                                <option value="dropbox">Man</option>
+                                <option value="dropbox">Kvinna</option>
+                                <option value="dropbox">Annat</option>
+                            </select>
+                            <strong class="required" title="Obligatorisk uppgift">*</strong>
+                        </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Vad tyckte du om webbsidan?</legend>
+                    <p>
+                        <input type="radio" name="svar" value="jätte bra" id="jätte bra" />
+                        <label for="jätte bra">Jätte bra</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="svar" value="okej" id="okej" />
+                        <label for="okej">Okej</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="svar" value="inte bra" id="inte bra" />
+                        <label for="inte bra">Mindre bra</label>
+                    </p>                 
+                </fieldset>
+                <fieldset>
+                    <legend>Extra</legend>
+                    <form>
+                        
+                        <label for="övrigText">Övrig text:</label><br>
+                        <textarea id="ovrigText" name="ovrigText" rows="5" cols="61"></textarea><br>
+                    </form>
+                </fieldset>
+                <fieldset>
+                    <a href="Formulär2.html">
+                        <input name="skicka" type="submit">
+                    </a>
+                </fieldset>
+            </main>
+    </body>
+</html>
