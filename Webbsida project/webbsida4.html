@@ -1,46 +1,40 @@
 <!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <title>Sida 4</title>
-        <meta charset="utf-8" />
-        <link href="webbsida project.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="wrapper">
-            <nav>
-                <div class="upper-border">
-                    <span class="left"><a href="webbsidaFörstasida.html">Andra uppfiningar</a></span>
-                    <span class="middle"><a href="Formulär1.html">Formulär</a></span>
-                    <span class="right">Tåg</span>
-                </div>
-            </nav>
-            <main>
-                <div class="down-border">
-                    <div class="container">
-                        <img src="bil1.jpg" alt="Example Image">
-                        <div class="text">
-                            <p>Genom årens lopp har bilindustrin genomgått en fascinerande utveckling, präglad av kontinuerlig </p>
-                            <p>forskning och teknologisk innovation. Från de första handbyggda modellerna på tidigt 1900-tal till </p>
-                            <p>dagens avancerade fordon har bilar ständigt förändrats för att möta de skiftande behoven hos </p>
-                            <p>samhället och dess användare.</p>
-                            <p>De äldre bilarna, med sina enkla konstruktioner och mekaniska komponenter, var banbrytande för sin tid och markerade början på en ny era av personlig transport. Dessa fordon, även om de saknade </p>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="text">
-                            <p>många av de moderna funktioner vi ser idag, var robusta och pålitliga och spelade en viktig roll i att </p>
-                            <p>förändra hur människor reste och interagerade med sin omgivning.</p>
-                            <p>Under 1900-talet genomgick bilindustrin en dramatisk förändring med införandet av massproduktion </p>
-                            <p>och industriell tillverkningsteknik. Henry Fords införande av löpande bandet på 1910-talet </p>
-                            <p>revolutionerade produktionsprocessen och gjorde det möjligt att producera bilar i en mycket snabbare </p>
-                            <p>takt och till lägre kostnad.
-                        </div>
-                        <audio controls>
-                            <source src="BilLjud.mp3" type="audio/mpeg">
-                        </audio>
-                    </div>
-                </div>
-            </main>
-        </div>
-    </body>
+<head>
+    <title>Sida 4</title>
+    <link href="WebbsidaProject.css" rel="stylesheet"> 
+</head>
+<body class="ColorBody">
+    <div class="wrapper">
+        <header class="footerSida3">
+            <h1>Meny</h1>
+        </header>
+        <nav>
+            <ul class="upper-borderColor">
+                <li class="left"><a href="webbsidaFörstasida.html">Andra uppfiningar</a></li>
+                <li class="middle"><a href="Formulär1.html">Formulär</a></li>
+                <li class="right">Bil</li>
+            </ul>
+        </nav>    
+        <main class="down-border3Color">
+            <figure class="TelefonArt1">
+                <h1>Bild, video, ljudklip</h1>
+                <img src="bil1.jpg" alt="Example Image"> <!-- En bild av en bil -->
+                <video class="bilkör" controls> <!-- En videospelare för att visa en video -->
+                    <source src="https://videos.pexels.com/video-files/857263/857263-hd_1920_1080_24fps.mp4" type="video/mp4"> <!-- Länk till videofilen -->
+                </video>
+                <audio controls>
+                    <source src="BilLjud.mp3" type="audio/mpeg"> <!-- Länk till ljudfilen -->
+                </audio>
+            </figure>
+            <article class="TelefonArt3">
+                <h2>Info om bilar</h2> <!-- En rubrik för att beskriva innehållet i artikeln -->
+                <p>Genom årens lopp har bilindustrin genomgått en fascinerande utveckling, präglad av kontinuerlig forskning och teknologisk innovation. Från de första handbyggda modellerna på tidigt 1900-tal till dagens avancerade fordon har bilar ständigt förändrats för att möta de skiftande behoven hos samhället och dess användare. De äldre bilarna, med sina enkla konstruktioner och mekaniska komponenter, var banbrytande för sin tid och markerade början på en ny era av personlig transport. Dessa fordon, även om de saknade många av de moderna funktioner vi ser idag, var robusta och pålitliga och spelade en viktig roll i att förändra hur människor reste och interagerade med sin omgivning. Under 1900-talet genomgick bilindustrin en dramatisk förändring med införandet av massproduktion och industriell tillverkningsteknik. Henry Fords införande av löpande bandet på 1910-talet revolutionerade produktionsprocessen och gjorde det möjligt att producera bilar i en mycket snabbare takt och till lägre kostnad. </p> <!-- En beskrivande text om bilars historia och utveckling -->
+            </article>
+        </main>
+        <footer class="footerSida3">
+            <h1>Tjena</h1>
+        </footer>
+    </div>
+</body>
 </html>

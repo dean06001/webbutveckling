@@ -1,46 +1,40 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="sv">
-    <head>
-        <title>Sida 3</title>
-        <meta charset="utf-8" />
-        <link href="webbsida project.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="wrapper">
-            <nav>
-                <div class="upper-border">
-                    <span class="left"><a href="webbsidaFörstasida.html">Andra uppfiningar</a></span>
-                    <span class="middle"><a href="Formulär1.html">Formulär</a></span>
-                    <span class="right">Telefonen</span>
-                </div>
-            </nav>
-            <main>
-                <div class="down-border">
-                    <div class="container">
-                        <img src="telefon.jpg">
-                        <div class="text">
-                            <p>Genom åren har telefonernas utveckling varit en fascinerande resa med djupgående forskning och</p>
-                            <p>teknologisk innovation. Från de tidiga mekaniska telefonerna på 1800-talet till dagens avancerade </p>
-                            <p>smartphones har telefonens uppbyggnad ständigt anpassats för att möta samhällets behov.</p>
-                            <p>De äldre telefonernas enkla konstruktion, med sina roterande nummerbrickor och </p>
-                            <p>koppartrådsförbindelser, var symboler för sin tid och banade väg för en ny era av kommunikation över avstånd.</p>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="text2">
-                            <p>Utvecklingen av transistorer och integrerade kretsar under 1900-talet möjliggjorde mindre och mer</p>
-                            <p>effektiva enheter och banade väg för mobiltelefoner på 1980-talet.</p>
-                            <p>Idag integrerar smartphones avancerad hårdvara och mjukvara för att erbjuda en mängd olika</p>
-                            <p>funktioner, vilket gör dem till centrala verktyg för personlig och professionell användning. Forskning </p>
-                            <p>inom området fortsätter att driva innovationen framåt, vilket kommer att forma framtiden för telefonins</p>
-                            <p>teknologi och dess roll i samhället.</p>
-                        </div>
-                        <audio controls>
-                            <source src="TelefonLjud.mp3" type="audio/mpeg">
-                        </audio>
-                    </div>
-                </div>
-            </main>
-        </div>
-    </body>
+<head>
+    <title>Sida 3</title>
+    <link href="WebbsidaProject.css" rel="stylesheet">
+</head>
+<body class="ColorBody"> <!-- Kroppselementet med en klass för att tillämpa en bakgrundsfärg -->
+    <div class="wrapper">
+        <header class="footerSida3">
+            <h1>Meny</h1>
+        </header>
+        <nav>
+            <ul class="upper-borderColor">
+                <li class="left"><a href="webbsidaFörstasida.html">Andra uppfiningar</a></li>
+                <li class="middle"><a href="Formulär1.html">Formulär</a></li>
+                <li class="right">Telefon</li>
+            </ul>
+        </nav>    
+        <main class="down-border2Color"> <!-- Huvudinnehållet med en klass för att tillämpa en nedre gränsstil -->
+            <figure class="TelefonArt1">
+                <h1>Bild, video, ljudklip</h1> <!-- En rubrik för att beskriva innehållet i artikeln -->
+                <img class="telefonbild" src="telefon.png" alt="Example Image"> <!-- En bild av en telefon -->
+                <video controls> <!-- En videospelare för att visa en video -->
+                    <source src="https://videos.pexels.com/video-files/7346566/7346566-uhd_2880_2160_25fps.mp4" type="video/mp4"> <!-- Länk till videofilen -->
+                </video>
+                <audio controls> <!-- En ljudspelare för att spela upp en ljudfil -->
+                    <source src="TelefonLjud.mp3" type="audio/mpeg"> <!-- Länk till ljudfilen -->
+                </audio>
+            </figure>
+            <article class="TelefonArt2">
+                <h2>Info om telefoner</h2> <!-- En rubrik för att beskriva innehållet i artikeln -->
+                <p>Genom åren har telefonernas utveckling varit en fascinerande resa med djupgående forskning och teknologisk innovation. Från de tidiga mekaniska telefonerna på 1800-talet till dagens avancerade smartphones har telefonens uppbyggnad ständigt anpassats för att möta samhällets behov. De äldre telefonernas enkla konstruktion, med sina roterande nummerbrickor och koppartrådsförbindelser, var symboler för sin tid och banade väg för en ny era av kommunikation över avstånd. Utvecklingen av transistorer och integrerade kretsar under 1900-talet möjliggjorde mindre och mer effektiva enheter och banade väg för mobiltelefoner på 1980-talet. Idag integrerar smartphones avancerad hårdvara och mjukvara för att erbjuda en mängd olika funktioner, vilket gör dem till centrala verktyg för personlig och professionell användning. Forskning inom området fortsätter att driva innovationen framåt, vilket kommer att forma framtiden för telefonins teknologi och dess roll i samhället.</p> <!-- En beskrivande text om telefoners historia och utveckling -->
+            </article>
+        </main>
+        <footer class="footerSida3">
+            <h1>Tjena</h1>
+        </footer>
+    </div>
+</body>
 </html>

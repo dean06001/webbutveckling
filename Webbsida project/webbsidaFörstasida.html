@@ -1,53 +1,45 @@
 <!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <title>Huvud Sida</title>
-        <meta charset="utf-8" />
-        <link href="webbsida project.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="wrapper">
-            <nav>
-                <div class="upper-border">
-                    <span class="left"><a href="webbsidaFörstasida.html">Andra uppfiningar</a></span>
-                    <span class="middle"><a href="Formulär1.html">Formulär</a></span>
-                    <span class="right">Main Sida</span>
-                </div>
-            </nav>
-            <main>
-                <div class="down-border">
-                    <div class="container3">
-                        <div class="row">
-                            <div>
-                                <a href="webbsida1.html"><img src="Glödlampa1.jpg"></a>
-                                <div class="text1">Glödlampa</div>
-                            </div>
-                            <div>
-                                <a href="webbsida2.html"><img src="NewTrain.jpg"></a>
-                                <div class="text1">Tåg</div>
-                            </div>
-                            <div>
-                                <a href="webbsida3.html"><img src="telefon.jpg"></a>
-                                <div class="text1">Telefon</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div>
-                                <a href="webbsida4.html"><img src="bil1.jpg"></a>
-                                <div class="text1">Bil</div>
-                            </div>
-                            <div>
-                                <a href="webbsida5.html"><img src="sol panel.jpg"></a>
-                                <div class="text1">Solpanel</div>
-                            </div>
-                            <div>
-                                <a href="webbsida6.html"><img src="flygplan.jpg"></a>
-                                <div class="text1">Flygplan</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </div>
-    </body>
+<head>
+    <title>Start Sida</title>
+    <link href="WebbsidaProject.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Meny</h1>
+        </header>
+        <nav>
+            <ul class="upper-border">
+                <li class="left"><a href="webbsidaFörstasida.html">Andra uppfiningar</a></li>
+                <li class="middle"><a href="Formulär1.html">Formulär</a></li>
+                <li class="right">Main Sida</li>
+            </ul>
+        </nav>    
+        <main class="down-border2">
+            <!-- First row of articles -->
+            <figure class="row1">
+                <!-- Link to webbsida1.html with image and heading -->
+                <a href="webbsida1.html"><img class="framsidaBild" src="Glödlampa1.jpg" alt="LänkBild1"><h1>Glödlampa</h1></a>
+                <!-- Link to webbsida2.html with image and heading -->
+                <a href="webbsida2.html"><img class="framsidaBild" src="NewTrain.jpg" alt="LänkBild2"><h2>Tåg</h2></a>
+                <!-- Link to webbsida3.html with image and heading -->
+                <a href="webbsida3.html"><img class="framsidaBild" src="telefon.png" alt="LänkBild3"><h3>Telefon</h3></a>
+            </figure>
+            <figure class="row2">
+                <!-- Link to webbsida4.html with image and heading -->
+                <a class="MainBild" href="webbsida4.html"><img class="framsidaBild" src="bil1.jpg" alt="LänkBild4"><h1>Bil</h1></a>
+                <!-- Link to webbsida5.html with image and heading -->
+                <a class="MainBild" href="webbsida5.html"><img class="framsidaBild" src="solpanel.jpg" alt="LänkBild5"><h2>SolPanel</h2></a>
+                <!-- Link to webbsida6.html with image and heading -->
+                <a class="MainBild" href="webbsida6.html"><img class="framsidaBild" src="flygplan.jpg" alt="LänkBild6"><h3>Flygplan</h3></a>
+                <!-- Link to webbsida7.html with image and heading -->
+                <a class="MainBild" href="webbsida7.html"><img class="framsidaBild" src="dator.jpg" alt="LänkBild7"><h4>Dator</h4></a>
+            </figure>
+        </main>
+        <footer>
+            <h1>Tjena</h1>
+        </footer>
+    </div>
+</body>
 </html>
