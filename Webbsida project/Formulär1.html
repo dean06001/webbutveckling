@@ -6,75 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="ColorBody3">
-        <a href="index.html">Tillbaka</a>
-    <main>
-        <fieldset>
-            <legend>Personuppgifter</legend>
-            <p>
-                <label for="un">Namn:</label>
-                <input name="username" id="un" required placeholder="Förnamn Efternamn"/>
-                <strong class="required" title="Obligatorisk uppgift">*</strong>
-            </p>
-            <p>
-                <label for="datetime">Födelsedatum:</label>
-                <input type="date" id="datetime" required>
-                <strong class="required" title="Obligatorisk uppgift">*</strong>
-            </p>
-            <p>
-                <label for="gender">Kön:</label>
-                <select name="gender" id="gender" required>
-                    <option disabled selected value="">Välj</option>
-                    <option value="Man">Man</option>
-                    <option value="Kvinna">Kvinna</option>
-                    <option value="Annat">Annat</option>
-                </select>
-                <strong class="required" title="Obligatorisk uppgift">*</strong>
-            </p>
-        </fieldset>
-        <fieldset>
-            <legend>Vad tyckte du om webbsidan?</legend>
-            <p>
-                <input type="radio" name="opinion" value="jättebra" id="jättebra" />
-                <label for="jättebra">Jättebra</label>
-            </p>
-            <p>
-                <input type="radio" name="opinion" value="okej" id="okej" />
-                <label for="okej">Okej</label>
-            </p>
-            <p>
-                <input type="radio" name="opinion" value="inte_bra" id="inte_bra" />
-                <label for="inte_bra">Mindre bra</label>
-            </p>
-        </fieldset>
-        <fieldset>
-            <legend>Extra</legend>
-            <label for="ovrigText">Övrig text:</label><br>
-            <textarea id="ovrigText" name="ovrigText" rows="5" cols="60"></textarea><br>
-        </fieldset>
-        <fieldset>
-            <legend>Logga in</legend>
-            <form action="login.php" method="post">
+    <div class="wrapper">
+        <nav id="formulärNav"><a href="index.html">Tillbaka</a></nav>
+        <main>
+            <fieldset>
+                <legend>Personuppgifter</legend>
                 <p>
-                    <label for="unmail">Mejladress:</label>
-                    <input type="email" name="unmail" id="unmail" required placeholder="foo@bar.com" />
+                    <label for="un">Namn:</label>
+                    <input name="username" id="un" required placeholder="Förnamn Efternamn">
                     <strong class="required" title="Obligatorisk uppgift">*</strong>
                 </p>
                 <p>
-                    <label for="pw">Lösenord:</label>
-                    <input name="password" type="password" id="pw" required placeholder="*******"/>
+                    <label for="datetime">Födelsedatum:</label>
+                    <input type="date" id="datetime" required>
                     <strong class="required" title="Obligatorisk uppgift">*</strong>
                 </p>
                 <p>
-                    <label for="remember">Spara dina uppgifter?</label>
-                    <input type="checkbox" id="remember" name="remember" />
+                    <label for="gender">Kön:</label>
+                    <select name="gender" id="gender" required>
+                        <option disabled selected value="">Välj</option>
+                        <option value="Man">Man</option>
+                        <option value="Kvinna">Kvinna</option>
+                        <option value="Annat">Annat</option>
+                    </select>
+                    <strong class="required" title="Obligatorisk uppgift">*</strong>
                 </p>
-            </form>
-        </fieldset>
-        <fieldset>
-            <form action="formulär2.html">
-                <input name="skicka" type="submit" value="Skicka">
-            </form>
-        </fieldset>
-    </main>
+            </fieldset>
+            <fieldset>
+                <legend>Vad tyckte du om webbsidan?</legend>
+                <p>
+                    <input type="radio" name="opinion" value="jättebra" id="jättebra">
+                    <label for="jättebra">Jättebra</label>
+                </p>
+                <p>
+                    <input type="radio" name="opinion" value="okej" id="okej">
+                    <label for="okej">Okej</label>
+                </p>
+                <p>
+                    <input type="radio" name="opinion" value="inte_bra" id="inte_bra">
+                    <label for="inte_bra">Mindre bra</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Extra</legend>
+                <label for="ovrigText">Övrig text:</label><br>
+                <textarea id="ovrigText" name="ovrigText" rows="5" cols="60"></textarea><br>
+            </fieldset>
+            <fieldset>
+                <legend>Logga in</legend>
+                <form action="login.php" method="post">
+                    <p>
+                        <label for="unmail">Mejladress:</label>
+                        <input type="email" name="unmail" id="unmail" required placeholder="foo@bar.com">
+                        <strong class="required" title="Obligatorisk uppgift">*</strong>
+                    </p>
+                    <p>
+                        <label for="pw">Lösenord:</label>
+                        <input name="password" type="password" id="pw" required placeholder="*******">
+                        <strong class="required" title="Obligatorisk uppgift">*</strong>
+                    </p>
+                    <p>
+                        <label for="remember">Spara dina uppgifter?</label>
+                        <input type="checkbox" id="remember" name="remember">
+                    </p>
+                </form>
+            </fieldset>
+            <fieldset>
+                <form action="formulär2.html">
+                    <input name="skicka" type="submit" value="Skicka">
+                </form>
+            </fieldset>
+        </main>
+    </div>
 </body>
 </html>

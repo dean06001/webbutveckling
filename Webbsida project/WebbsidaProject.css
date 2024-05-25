@@ -29,6 +29,15 @@ nav {
     position: relative;
 }
 
+#formulärNav{
+    grid-area: unset;
+    width: auto;
+    top: auto;
+    margin: auto;
+    position: relative;
+    right: 47%;
+}
+
 ul{
     margin: 0;
 }
@@ -398,7 +407,7 @@ border-radius : 15px;
 position : relative;
 margin: auto auto;
 width : 80%;
-height: calc(fit-content + 50px);
+height: fit-content;
 max-width: 1100px;
 text-align : center;
 padding : 10px;
@@ -414,7 +423,7 @@ position : relative;
 margin: auto auto;
 margin-bottom: 10px;
 width : 80%;
-height: calc(fit-content + 50px);
+height: fit-content;
 max-width: 1100px;
 text-align : center;
 padding : 10px;
@@ -461,6 +470,23 @@ padding : 10px;
 background-color : gray;
 }
 
+.Tack {
+    font-size: 15px;
+    border: solid black 1px;
+    border-collapse: collapse;
+    padding: 10px;
+    width: 400px;
+    position: relative;
+    text-align: center;
+    margin: auto auto;
+    top: 43px;
+    border-radius: 15px;
+}
+
+.Titleform2{
+    font-size: 30px;
+}
+
 fieldset { /* Stilar för fältuppsättningar */
     border-radius: 10px;
     width: 30%; /* Anpassa bredden till förälderelementet */
@@ -504,10 +530,6 @@ strong { /* Stilar för starkt markerad text */
 text-align : left;
 }
 
-.Tack { /* Specifika stilar för en tackmeddelande */
-font-size : 20px;
-}
-
 table, th, td { /* Stilar för tabeller och dess celler */
 border : black solid 1px;
 border-collapse : collapse;
@@ -543,7 +565,7 @@ text-align : right;
 /* Media query för skärmar som är max 768px breda */
 @media (max-width: 768px) {
     .left, .right, .middle {
-        font-size: 2rem;/
+        font-size: 2rem;
     }
 
     .left, .right, .middle {
