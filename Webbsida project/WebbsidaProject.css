@@ -1,7 +1,11 @@
 .wrapper { /* Styling för behållaren som omsluter allt innehåll */
-grid-template-rows :20px 50px auto 50px; /* Definierar rader i grid-layouten */
+grid-template-rows :20px 60px auto 60px; /* Definierar rader i grid-layouten */
 grid-template-areas : "header" "nav" "main" "footer"; /* Definierar områden för grid-layouten */
-height : 100vh; /* Sätter höjden på behållaren till 100% av vyhöjden */
+height : 50vw; /* Sätter höjden på behållaren till 100% av vyhöjden */
+max-height: 50vw;
+width: 100vw;
+
+
 display : grid; /* Använder grid-layout för att organisera innehållet */
 }
 
@@ -9,29 +13,42 @@ header{/*En style till top delen av websidan*/
     grid-area: header;/*Detta definierar vart den griden ligger i layouten*/
     border: solid black 2px;
     border-radius: 15px;
-    width: 550px;/*Hur bred griden är*/
+    width: 35vw;/*Hur bred griden är*/
     background-color : lightgray;/*Bakgrundfärgen till griden*/
     position: relative;
-    left: 35%;
+    margin:auto auto;
     height: 40px;
     top: 80px;
+}
+
+nav {
+    grid-area: nav;
+    width: fit-content;
+    top: 100px;
+    margin: auto auto;
+    position: relative;
+}
+
+ul{
+    margin: 0;
+}
+
+main{
+    grid-area: main;
+    position: relative;
 }
 
 footer{/*En style till top delen av websidan*/
     grid-area: footer;/*Detta definierar vart den griden ligger i layouten*/
     border: solid black 2px;
     border-radius: 15px;
-    width: 1100px;/*Hur bred griden är*/
+    width : 75vw;
+    max-width: 1100px;
     background-color : lightgray;/*Bakgrundfärgen till griden*/
     position: relative;
-    left: 20.5%;
+    margin: auto auto;
     height: 40px;
-    top: 1px;
-}
-
-.footerSida2{ /* Ger bara en position där jag vill att footern ska vara.*/
-    position: relative;
-    top: 848px;
+    bottom: 1vh;
 }
 
 .footerSida3{ /*Är en färg jag gav till footern*/
@@ -45,134 +62,128 @@ footer{/*En style till top delen av websidan*/
 .upper-border { /* Gemensamma stilar för den övre navigationsmenyn */
 border : black solid 2px; /* Svart border */
 border-radius : 15px; /* Avrundade hörn */
-margin : 100px; /* Mellanrum runt om */
-position : absolute; /* Absolut positionering */
-left : 15%; /* Avstånd från vänster sida */
-width : 1100px; /* Bredd */
+position : relative; /* Absolut positionering */
+max-height: 100%;
+width : 75vw;
+top: 0vw;
+max-width: 1100px;
 text-align : center; /* Centrerad text */
 padding : 10px; /* Utfyllnad */
 background-color : lightgray; /* Bakgrundsfärg */
 }
 
 .upper-borderColor { /* Specifika stilar för navigationsmenyn med olika bakgrundsfärger */
-border : black solid 2px;
-border-radius : 15px;
-margin : 100px;
-position : absolute;
-left : 15%;
-width : 1100px;
-text-align : center;
-padding : 10px;
+    border : black solid 2px; /* Svart border */
+    border-radius : 15px; /* Avrundade hörn */
+    position : relative; /* Absolut positionering */
+    max-height: 100%;
+    width : 75vw;
+    max-width: 1100px;
+    text-align : center; /* Centrerad text */
+    padding : 10px; /* Utfyllnad */
+    background-color : lightgray; /* Bakgrundsfärg */
 background-color : rgb(130, 123, 167); /* Anpassad bakgrundsfärg */
 } 
 
 .upper-borderColor2 {
-border : black solid 2px;
-border-radius : 15px;
-margin : 100px;
-position : absolute;
-left : 15%;
-width : 1100px;
-text-align : center;
-padding : 10px;
-background-color : #D2B48C;
-}
-
-.upper-border1 {
     border : black solid 2px; /* Svart border */
     border-radius : 15px; /* Avrundade hörn */
-    margin : 100px; /* Mellanrum runt om */
-    position : absolute; /* Absolut positionering */
-    left : 15%; /* Avstånd från vänster sida */
-    width : 1100px; /* Bredd */
+    position : relative; /* Absolut positionering */
+    max-height: 100%;
+    width : 75vw;
+    max-width: 1100px;
     text-align : center; /* Centrerad text */
-    top:28px;
     padding : 10px; /* Utfyllnad */
     background-color : lightgray; /* Bakgrundsfärg */
-}
-    
-
-.down-border1 {
-border : black solid 2px;
-border-radius : 15px;
-margin : 100px;
-top : 110px;
-position : absolute;
-left : 15%;
-width : 1100px;
-text-align : center;
-padding : 10px;
-background-color : lightgray;
+background-color : #D2B48C;
 }
 
 .down-border2 {
 border : black solid 2px;
 border-radius : 15px;
-margin : 100px;
-top : 100px;
-height : 500px;
-position : absolute;
-left : 15%;
-width : 1100px;
+height : 30vw;
+min-height: 220px;
+position : relative;
+margin: auto auto;
+width : 75vw;
+max-width: 1100px;
 text-align : center;
 padding : 10px;
+margin-top: 7rem;
+margin-bottom: 3rem;
+top: 1vw;
 background-color : lightgray;
 }
 
+.down-border3 {
+    border : black solid 2px;
+    border-radius : 15px;
+    height: fit-content;
+    position : relative;
+    margin: auto auto;
+    width : 75vw;
+    max-width: 1100px;
+    text-align : center;
+    padding : 10px;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    top: 1vw;
+    background-color : lightgray;
+    }
+
 .down-border2Color {
-border : black solid 2px;
-border-radius : 15px;
-margin : 100px;
-top : 100px;
-height : 500px;
-position : absolute;
-left : 15%;
-width : 1100px;
-text-align : center;
-padding : 10px;
+    border: black solid 2px;
+    border-radius: 15px;
+    grid-template-columns: auto auto;
+    display: grid;
+    position: relative;
+    margin: auto;
+    width: 75vw;
+    max-width: 1100px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    top: 1vw;
 background-color : rgb(130, 123, 167);
 }
 
 .down-border2Color2 {
-border : black solid 2px;
-border-radius : 15px;
-margin : 100px;
-top : 100px;
-height : 520px;
-position : absolute;
-left : 15%;
-width : 1100px;
-text-align : center;
-padding : 10px;
+    border: black solid 2px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    position: relative;
+    margin: auto;
+    height: auto;
+    width: 75vw;
+    max-width: 1100px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    top: 1vw;
 background-color : #D2B48C;
 }
 
-.down-border3 {
-border : black solid 2px;
-border-radius : 15px;
-margin : 100px;
-top : 100px;
-height : 530px;
-position : absolute;
-left : 15%;
-width : 1100px;
-text-align : center;
-padding : 10px;
-}
-
-.down-border3Color {
-border : black solid 2px;
-border-radius : 15px;
-margin : 100px;
-top : 100px;
-height : 530px;
-position : absolute;
-left : 15%;
-width : 1100px;
-text-align : center;
-padding : 10px;
-background-color : rgb(130, 123, 167);
-}
+.down-border3Color3 {
+    border: black solid 2px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto; /* Två rader med automatisk höjd */
+    position: relative;
+    margin: auto;
+    width: 75vw; /* Anpassa bredden till förälderelementets bredd */
+    max-width: 1100px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    top: 1vw;
+    background-color: #D2B48C;
+  }
 
 section { /* Stilar för sektionselementet */
 border : black solid 1px; /* Gemensamma stilar för sektioner */
@@ -210,71 +221,21 @@ background-color : #8b4513;
     background-color: white;
 }
 
-.art1 { /* Specifika stilar för olika artiklar */
-background-color : #FF7F50;
+.art1
+{
+    background-color:  #FF7F50;
+    padding: 10px;
+    min-width: 19vw;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
-.art2 { /* Stilar för artikel 2 */
-position : relative;
-left : 32%;
-padding : 10px;
-top : -515px;
-height : 493px;
-background-color : #FF7F50;
-}
-
-.art3 { /* Stilar för artikel 3 */
-position : relative;
-left : 66%;
-padding : 10px;
-top : -1030px;
-height : 494px;
-background-color : #FF7F50;
-}
-
-.art4 {
-position : relative;
-left : 33%;
-padding : 10px;
-top : -483px;
-height : 471px;
-background-color : #FF7F50;
-}
-
-.art5 {
-position : relative;
-width : 400px;
-left : 60%;
-padding : 15px;
-top : -402px;
-background-color : #FF7F50;
-}
-
-.art6 {
-position : relative;
-width : 600px;
-padding : 10px;
-height : 380px;
-background-color : #FF7F50;
-}
-
-.art7 {
-position : relative;
-width : 330px;
-top : -10px;
-padding : 10px;
-top : 10px;
-background-color : #FF7F50;
-}
-
-.art8 {
-position : relative;
-width : 330px;
-left : 67%;
-height : 470px;
-padding : 10px;
-top : -976px;
-background-color : #FF7F50;
+.art2 {
+    background-color: #FF7F50;
+    padding: 10px;
+    width: 90%; /* Ta upp 90% av förälderelementets bredd */
+    margin: 10px auto; /* Centrera elementet med 10px marginal runtom */
+    box-sizing: border-box;
 }
 
 .sida2 {
@@ -288,50 +249,38 @@ left : 19%;
 display : flex;
 }
 
-.textdator {
-position : relative;
-width : 600px;
-left : -20px;
-height : 70px;
-padding : 10px;
-top : -500px;
-background-color : #FF7F50;
-text-align: left;
-}
 
-.TelefonArt1 {
-position : relative;
-left : 1%;
-padding : 10px;
-top: -20px;
-background-color : #5d6292;
+.TelefonArt1{
+    height: fit-content;
+    width: 19vw;
+    max-width: 100%;
+    background-color: #5d6292;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .TelefonArt2 {
-position : relative;
-width : 600px;
-height : 468px;
-right : -43%;
-padding : 10px;
-top : -540px;
-background-color : #5d6292;
+    width: 30vw;
+    height: fit-content;
+    background-color: #5d6292;
+    padding: 10px;
 }
 
 .TelefonArt3 {
-position : relative;
-width : 600px;
-height : 506px;
-right : -43%;
-padding : 10px;
-top : -570px;
+    width: 30vw;
+    height: fit-content;
+    background-color: #5d6292;
+    padding: 10px;
 background-color : #5d6292;
 }
 
 img { /* Generella stilar för bilder */
 max-width : 100%; /* Gemensamma bildstilar */
 width : 400px;
+height: 30vw;
+max-height: 10vw;
 margin-right : 20px;
-height : 190px;
+height : auto;
 border-radius : 15px;
 border : black solid 1px;
 position: relative;
@@ -356,9 +305,17 @@ top : 10px;
 
 video { /* Stilar för videospelare */
 width : 340px; /* Videospelarstilar */
-height : 200px;
+max-width: 100%;
+height : 30vw;
+max-height: 10vw;
 border : black solid 1px;
 border-radius : 15px;
+}
+
+audio{
+    width : 340px; /* Videospelarstilar */
+    max-width: 100%;
+    max-height: 10vw;
 }
 
 body { /* Generella stilar för hela sidan */
@@ -433,6 +390,37 @@ border : none;
 height : 170px;
 }
 
+.sida1-text{
+    display : flex;
+justify-content : space-around;
+border : black solid 2px;
+border-radius : 15px;
+position : relative;
+margin: auto auto;
+width : 80%;
+height: calc(fit-content + 50px);
+max-width: 1100px;
+text-align : center;
+padding : 10px;
+top : 0.1vw;
+}
+
+.sida2-text{
+    display : flex;
+justify-content : space-around;
+border : black solid 2px;
+border-radius : 15px;
+position : relative;
+margin: auto auto;
+margin-bottom: 10px;
+width : 80%;
+height: calc(fit-content + 50px);
+max-width: 1100px;
+text-align : center;
+padding : 10px;
+top : 0.5vw;
+}
+
 .row1 { /* Stilar för vissa rader med bilder */
 display : flex;
 flex-direction : row;
@@ -440,13 +428,16 @@ justify-content : space-around;
 margin-bottom : 20px;
 border : black solid 2px;
 border-radius : 15px;
-margin : 100px;
-position : absolute;
-left : -4.5%;
-width : 1000px;
+position : relative;
+margin: auto auto;
+width : 80%;
+height: 20vw;
+max-height: 10vw;
+min-height: 70px;
+max-width: 1100px;
 text-align : center;
 padding : 10px;
-top : -70px;
+top : 1vw;
 background-color : gray;
 }
 
@@ -456,44 +447,45 @@ flex-direction : row;
 justify-content : space-around;
 margin-bottom : 20px;
 border : black solid 2px;
-margin : 100px;
-position : absolute;
-top : 160px;
-left : -4.5%;
-width : 1000px;
+position : relative;
+top : 4vw;
+max-height: 100%;
+margin: auto auto;
+width : 80%;
+height: 30vw;
+max-height: 10vw;
+min-height: 70px;
+max-width: 1100px;
 text-align : center;
 padding : 10px;
 background-color : gray;
 }
 
 fieldset { /* Stilar för fältuppsättningar */
-border-radius : 10px;
-width : 25%;
-left : 50%;
-position : relative;
-transform : translate(-50%);
-margin-bottom : 10px;
+    border-radius: 10px;
+    width: 30%; /* Anpassa bredden till förälderelementet */
+    margin: 0 auto 10px auto; /* Centrera och lägg till marginal nedåt */
 }
 
 textarea { /* Stilar för textrutor */
-resize : none; 
+    resize: none;
+    width: 100%; /* Fyll förälderelementets bredd */
 }
 
-label {/* Stilar för etiketter */
-display : inline-block;
-text-align : right;
-width : 120px;
+label { /* Stilar för etiketter */
+    display: block; /* Använd blockdisplay för att undvika vertikal instabilitet */
+    text-align: left; /* Justera text till vänster */
+    width: 100%; /* Fyll förälderelementets bredd */
+    margin-bottom: 5px; /* Lägg till marginal nedåt */
 }
 
 input[type="date"] {
-display : inline-block;
-width : 172px;
+    width: 100%; /* Fyll förälderelementets bredd */
 }
 
 input[name="skicka"] {
-position : relative;
-left : 50%;
-transform : translate(-50%);
+    display: block; /* Visa som block för att centrera */
+    margin: 0 auto; /* Centrera */
 }
 
 label[for="jätte bra"] {
@@ -522,7 +514,6 @@ border-collapse : collapse;
 padding : 8px;
 margin : auto;
 table-layout : fixed;
-width : 160px;
 }
 
 tr:nth-child(1) { /* Specifika stilar för tabellrader */
@@ -543,4 +534,77 @@ text-align : left;
 
 td:nth-child(2), th:nth-child(4) {
 text-align : right;
+}
+
+.down-border3Color3 > :nth-child(n+3) {
+    grid-column: span 2;
+  }
+
+/* Media query för skärmar som är max 768px breda */
+@media (max-width: 768px) {
+    .left, .right, .middle {
+        font-size: 2rem;/
+    }
+
+    .left, .right, .middle {
+        font-size: 1rem;
+    }
+}
+
+/* Media query för skärmar som är max 480px breda */
+@media (max-width: 480px) {
+    .left, .right, .middle {
+        font-size: 1.5rem;
+    }
+
+    .left, .right, .middle {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .down-border2Color {
+        flex-direction: column; /* Ändra till en kolumn på mindre skärmar */
+        align-items: center; /* Centrera elementen vertikalt */
+    }
+}
+
+@media (max-width: 480px) {
+    .down-border2Color {
+        flex-direction: column; /* Ändra till en kolumn på mindre skärmar */
+        align-items: center; /* Centrera elementen vertikalt */
+    }
+
+}
+
+@media (max-width: 1400px) {
+    .down-border2Color2 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .down-border2Color2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Media query för att ändra layouten vid 480px */
+@media (max-width: 480px) {
+    .down-border2Color2,.down-border3Color3 {
+        grid-template-columns: 1fr; /* En kolumn vid 480px */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .down-border3Color3 {
+      grid-template-columns: 1fr; /* Ändra till en kolumn för mindre skärmar */
+      grid-template-rows: auto auto auto; /* Tre rader med automatisk höjd */
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .down-border3Color3 {
+        width: 90vw; /* Justera bredden för mindre skärmar */
+    }
 }
