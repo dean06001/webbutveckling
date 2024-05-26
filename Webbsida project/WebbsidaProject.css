@@ -68,7 +68,7 @@ footer{/*En style till top delen av websidan*/
     background-color : #D2B48C;
 }
 
-.upper-border { /* Gemensamma stilar för den övre navigationsmenyn */
+.upper-border1 { /* Gemensamma stilar för den övre navigationsmenyn */
 border : black solid 2px; /* Svart border */
 border-radius : 15px; /* Avrundade hörn */
 position : relative; /* Absolut positionering */
@@ -81,7 +81,7 @@ padding : 10px; /* Utfyllnad */
 background-color : lightgray; /* Bakgrundsfärg */
 }
 
-.upper-borderColor { /* Specifika stilar för navigationsmenyn med olika bakgrundsfärger */
+.upper-borderColor1 { /* Specifika stilar för navigationsmenyn med olika bakgrundsfärger */
     border : black solid 2px; /* Svart border */
     border-radius : 15px; /* Avrundade hörn */
     position : relative; /* Absolut positionering */
@@ -107,6 +107,22 @@ background-color : rgb(130, 123, 167); /* Anpassad bakgrundsfärg */
 background-color : #D2B48C;
 }
 
+.down-border1 {
+    border : black solid 2px;
+    border-radius : 15px;
+    height: fit-content;
+    position : relative;
+    margin: auto auto;
+    width : 75vw;
+    max-width: 1100px;
+    text-align : center;
+    padding : 10px;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    top: 1vw;
+    background-color : lightgray;
+}
+
 .down-border2 {
 border : black solid 2px;
 border-radius : 15px;
@@ -124,40 +140,25 @@ top: 1vw;
 background-color : lightgray;
 }
 
-.down-border3 {
-    border : black solid 2px;
-    border-radius : 15px;
-    height: fit-content;
-    position : relative;
-    margin: auto auto;
-    width : 75vw;
-    max-width: 1100px;
-    text-align : center;
-    padding : 10px;
-    margin-top: 7rem;
-    margin-bottom: 3rem;
-    top: 1vw;
-    background-color : lightgray;
-    }
 
-.down-border2Color {
+
+.down-borderColor1{
+    display: flex;
     border: black solid 2px;
     border-radius: 15px;
-    grid-template-columns: auto auto;
-    display: grid;
-    position: relative;
-    margin: auto;
+    flex-wrap: wrap; /* Tillåt element att flyta till nästa rad om de inte ryms på samma rad */
+    justify-content: center; /* Centrera elementen horisontellt */
     width: 75vw;
     max-width: 1100px;
-    text-align: center;
+    height: fit-content;
+    margin: auto;
     padding: 10px;
     margin-top: 7rem;
     margin-bottom: 3rem;
-    top: 1vw;
-background-color : rgb(130, 123, 167);
+    background-color: rgb(130, 123, 167);
 }
 
-.down-border2Color2 {
+.down-borderColor2 {
     border: black solid 2px;
     border-radius: 15px;
     display: grid;
@@ -165,7 +166,6 @@ background-color : rgb(130, 123, 167);
     gap: 5px;
     position: relative;
     margin: auto;
-    height: auto;
     width: 75vw;
     max-width: 1100px;
     text-align: center;
@@ -176,23 +176,24 @@ background-color : rgb(130, 123, 167);
 background-color : #D2B48C;
 }
 
-.down-border3Color3 {
+.down-borderColor3 {
     border: black solid 2px;
     border-radius: 15px;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto; /* Två rader med automatisk höjd */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
     position: relative;
     margin: auto;
-    width: 75vw; /* Anpassa bredden till förälderelementets bredd */
+    width: 75vw;
     max-width: 1100px;
     text-align: center;
     padding: 10px;
     margin-top: 7rem;
     margin-bottom: 3rem;
     top: 1vw;
-    background-color: #D2B48C;
-  }
+background-color : #D2B48C;
+}
 
 section { /* Stilar för sektionselementet */
 border : black solid 1px; /* Gemensamma stilar för sektioner */
@@ -234,16 +235,19 @@ background-color : #8b4513;
 {
     background-color:  #FF7F50;
     padding: 10px;
-    min-width: 17vw;
+    width: fit-content;
     max-width: 100%;
     box-sizing: border-box;
 }
 
 .art2 {
-    background-color: #FF7F50;
+    background-color:  #FF7F50;
+    grid-template-rows: auto auto;
     padding: 10px;
-    width: 90%;
-    margin: 10px auto; /* Centrera elementet med 10px marginal runtom */
+    width: fit-content;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
     box-sizing: border-box;
 }
 
@@ -259,28 +263,30 @@ display : flex;
 }
 
 
-.TelefonArt1{
+.Telefon1{
     height: fit-content;
     width: 19vw;
+    min-width: 200px;
     max-width: 100%;
     background-color: #5d6292;
     padding: 10px;
     box-sizing: border-box;
 }
 
-.TelefonArt2 {
-    width: 30vw;
-    height: fit-content;
-    background-color: #5d6292;
-    padding: 10px;
+.Telefon1>*{
+    min-height: 100px;
 }
 
-.TelefonArt3 {
+.Telefon2 {
+    position: relative;
+    margin: auto auto;
     width: 30vw;
     height: fit-content;
     background-color: #5d6292;
     padding: 10px;
-background-color : #5d6292;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    box-sizing: border-box;
 }
 
 img { /* Generella stilar för bilder */
@@ -296,7 +302,7 @@ position: relative;
 
 }
 
-h1,h2,h3,h4,h5{ /* Stilar för rubriker */
+h1,h2,h3,h4{ /* Stilar för rubriker */
     font-size: 17px;
     text-align: center;
     margin: 0;
@@ -406,28 +412,13 @@ border : black solid 2px;
 border-radius : 15px;
 position : relative;
 margin: auto auto;
-width : 80%;
-height: fit-content;
-max-width: 1100px;
-text-align : center;
-padding : 10px;
-top : 0.1vw;
-}
-
-.sida2-text{
-    display : flex;
-justify-content : space-around;
-border : black solid 2px;
-border-radius : 15px;
-position : relative;
-margin: auto auto;
 margin-bottom: 10px;
 width : 80%;
 height: fit-content;
 max-width: 1100px;
 text-align : center;
 padding : 10px;
-top : 0.5vw;
+top : 0.1vw;
 }
 
 .row1 { /* Stilar för vissa rader med bilder */
@@ -483,8 +474,14 @@ background-color : gray;
     border-radius: 15px;
 }
 
-.Titleform2{
-    font-size: 30px;
+.Titleform2 {
+    position: relative;
+    font-size: 2vw; /* Textstorlek relativt till viewportens bredd */
+    width: 20vw; /* Bredd relativt till viewportens bredd */
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    box-sizing: border-box;
 }
 
 fieldset { /* Stilar för fältuppsättningar */
@@ -536,7 +533,8 @@ border-collapse : collapse;
 padding : 8px;
 margin : auto;
 table-layout : fixed;
-width: 13vw;
+width: 15vw;
+max-width: 10vw;
 }
 
 tr:nth-child(1) { /* Specifika stilar för tabellrader */
@@ -564,7 +562,7 @@ text-align : right;
   }
 
 /* Media query för skärmar som är max 768px breda */
-@media (max-width: 768px) {
+@media screen and(max-width: 768px) {
     .left, .right, .middle {
         font-size: 2rem;
     }
@@ -572,10 +570,15 @@ text-align : right;
     .left, .right, .middle {
         font-size: 1rem;
     }
+    
+    .Titleform2 {
+        font-size: 4vw; /* Mindre textstorlek för mindre skärmar */
+        width: 40vw; /* Anpassa bredden för mindre skärmar */
+    }
 }
 
 /* Media query för skärmar som är max 480px breda */
-@media (max-width: 480px) {
+@media screen and(max-width: 480px) {
     .left, .right, .middle {
         font-size: 1.5rem;
     }
@@ -583,46 +586,14 @@ text-align : right;
     .left, .right, .middle {
         font-size: 0.8rem;
     }
-}
-
-@media (max-width: 768px) {
-    .down-border2Color {
-        flex-direction: column; /* Ändra till en kolumn på mindre skärmar */
-        align-items: center; /* Centrera elementen vertikalt */
-    }
-}
-
-@media (max-width: 480px) {
-    .down-border2Color {
-        flex-direction: column; /* Ändra till en kolumn på mindre skärmar */
-        align-items: center; /* Centrera elementen vertikalt */
-    }
-
-}
-
-@media (max-width: 1400px) {
-    .down-border2Color2 {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 900px) {
-    .down-border2Color2 {
+    .down-border2Color2,.down-border3Color3 {
         grid-template-columns: 1fr;
     }
 }
 
-/* Media query för att ändra layouten vid 480px */
-@media (max-width: 480px) {
+@media screen and(max-width: 1400px) {
     .down-border2Color2,.down-border3Color3 {
-        grid-template-columns: 1fr; /* En kolumn vid 480px */
+        grid-template-columns: 1fr 1fr;
     }
 }
-
-@media screen and (max-width: 768px) {
-    .down-border3Color3 {
-      grid-template-columns: 1fr; /* Ändra till en kolumn för mindre skärmar */
-      grid-template-rows: auto auto auto; /* Tre rader med automatisk höjd */
-    }
-  }
 
