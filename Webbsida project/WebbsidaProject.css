@@ -234,7 +234,7 @@ background-color : #8b4513;
 {
     background-color:  #FF7F50;
     padding: 10px;
-    min-width: 19vw;
+    min-width: 17vw;
     max-width: 100%;
     box-sizing: border-box;
 }
@@ -242,7 +242,7 @@ background-color : #8b4513;
 .art2 {
     background-color: #FF7F50;
     padding: 10px;
-    width: 90%; /* Ta upp 90% av förälderelementets bredd */
+    width: 90%;
     margin: 10px auto; /* Centrera elementet med 10px marginal runtom */
     box-sizing: border-box;
 }
@@ -536,6 +536,7 @@ border-collapse : collapse;
 padding : 8px;
 margin : auto;
 table-layout : fixed;
+width: 13vw;
 }
 
 tr:nth-child(1) { /* Specifika stilar för tabellrader */
@@ -625,8 +626,3 @@ text-align : right;
     }
   }
 
-@media screen and (max-width: 768px) {
-    .down-border3Color3 {
-        width: 90vw; /* Justera bredden för mindre skärmar */
-    }
-}
