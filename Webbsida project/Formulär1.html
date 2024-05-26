@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <title>Formulär</title>
-    <link href="webbsidaproject.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
+    <title>Formulär</title> <!-- Titeln på webbsidan -->
+    <link href="webbsidaproject.css" rel="stylesheet"><!-- Länk till extern CSS-fil -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Anpassning för olika enheter -->
+    <meta charset="UTF-8"><!-- Teckenuppsättningen för dokumentet -->
 </head>
-<body class="ColorBody3">
-    <div class="wrapper">
-        <nav id="formulärNav"><a href="index.html">Tillbaka</a></nav>
-        <main>
-            <fieldset>
-                <legend>Personuppgifter</legend>
+<body class="ColorBody3"><!-- Bakgrundsfärg för sidan -->
+    <div class="wrapper"><!-- Grid för sidans innehåll -->
+        <nav id="formulärNav"><a href="index.html">Tillbaka</a></nav><!-- Navigationslänk -->
+        <main><!-- Huvuddelen av sidans innehåll -->
+            <fieldset><!-- Grupp för personuppgifter -->
+                <legend>Personuppgifter</legend><!-- Namn på rutan -->
                 <p>
-                    <label for="un">Namn:</label>
-                    <input name="username" id="un" required placeholder="Förnamn Efternamn">
-                    <strong class="required" title="Obligatorisk uppgift">*</strong>
+                    <label for="un">Namn:</label><!--Beskriver bara att du ska skrva ditt namn-->
+                    <input name="username" id="un" required placeholder="Förnamn Efternamn"><!-- Inmatningsfält för användarnamn -->
+                    <strong class="required" title="Obligatorisk uppgift">*</strong><!-- Indikation på obligatoriskt fält -->
                 </p>
                 <p>
-                    <label for="datetime">Födelsedatum:</label>
+                    <label for="datetime">Födelsedatum:</label><!--Beskriver bara att du ska skrva ditt födelsedatum-->
                     <input type="date" id="datetime" required>
                     <strong class="required" title="Obligatorisk uppgift">*</strong>
                 </p>
                 <p>
-                    <label for="gender">Kön:</label>
+                    <label for="gender">Kön:</label> <!--Detta är bara knappar för att trycka in vilket kön du är-->
                     <select name="gender" id="gender" required>
                         <option disabled selected value="">Välj</option>
                         <option value="Man">Man</option>
@@ -33,7 +33,7 @@
                     <strong class="required" title="Obligatorisk uppgift">*</strong>
                 </p>
             </fieldset>
-            <fieldset>
+            <fieldset> <!--Radio knappar för att välja vad du tyckte-->
                 <legend>Vad tyckte du om webbsidan?</legend>
                 <p>
                     <input type="radio" name="opinion" value="jättebra" id="jättebra">
@@ -50,31 +50,31 @@
             </fieldset>
             <fieldset>
                 <legend>Extra</legend>
-                <label for="ovrigText">Övrig text:</label><br>
-                <textarea id="ovrigText" name="ovrigText" rows="5" cols="60"></textarea><br>
+                <label for="ovrigText">Övrig text:</label><br><!-- Textfält för att lämna ytterligare kommentarer -->
+                <textarea id="ovrigText" name="ovrigText" rows="5" cols="60"></textarea><br><!--Bestämd storlek för text fältet-->
             </fieldset>
             <fieldset>
                 <legend>Logga in</legend>
-                <form action="login.php" method="post">
+                <form action="login.php" method="post"><!-- Formulär för inloggning -->
                     <p>
-                        <label for="unmail">Mejladress:</label>
+                        <label for="unmail">Mejladress:</label><!-- Inmatningsfält för mejladress-->
                         <input type="email" name="unmail" id="unmail" required placeholder="foo@bar.com">
                         <strong class="required" title="Obligatorisk uppgift">*</strong>
                     </p>
                     <p>
-                        <label for="pw">Lösenord:</label>
+                        <label for="pw">Lösenord:</label><!-- Inmatningsfält för Lösenord-->
                         <input name="password" type="password" id="pw" required placeholder="*******">
                         <strong class="required" title="Obligatorisk uppgift">*</strong>
                     </p>
                     <p>
-                        <label for="remember">Spara dina uppgifter?</label>
+                        <label for="remember">Spara dina uppgifter?</label><!-- Kryssruta för att spara inloggningsuppgifter -->
                         <input type="checkbox" id="remember" name="remember">
                     </p>
                 </form>
             </fieldset>
             <fieldset>
                 <form action="formulär2.html">
-                    <input name="skicka" type="submit" value="Skicka">
+                    <input name="skicka" type="submit" value="Skicka"><!-- Knapp för att skicka formuläret -->
                 </form>
             </fieldset>
         </main>
