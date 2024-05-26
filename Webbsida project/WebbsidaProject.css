@@ -179,10 +179,11 @@ background-color : #D2B48C;
 .down-borderColor3 {
     border: black solid 2px;
     border-radius: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 10px;
+    display: flex; /* Använd flexbox */
+    flex-wrap: wrap; /* Tillåt element att flyta till nästa rad */
+    gap: 5px;
+    justify-content: center; /* Centrera elementen horisontellt */
+    align-items: center; /* Centrera elementen vertikalt */
     position: relative;
     margin: auto;
     width: 75vw;
@@ -192,7 +193,7 @@ background-color : #D2B48C;
     margin-top: 7rem;
     margin-bottom: 3rem;
     top: 1vw;
-background-color : #D2B48C;
+    background-color: #D2B48C;
 }
 
 section { /* Stilar för sektionselementet */
@@ -242,7 +243,6 @@ background-color : #8b4513;
 
 .art2 {
     background-color:  #FF7F50;
-    grid-template-rows: auto auto;
     padding: 10px;
     width: fit-content;
     max-width: 100%;
@@ -250,6 +250,7 @@ background-color : #8b4513;
     word-wrap: break-word;
     box-sizing: border-box;
 }
+
 
 .sida2 {
 border : black solid 1px;
@@ -476,12 +477,14 @@ background-color : gray;
 
 .Titleform2 {
     position: relative;
-    font-size: 2vw; /* Textstorlek relativt till viewportens bredd */
-    width: 20vw; /* Bredd relativt till viewportens bredd */
+    font-size: 30px;
+    width: 90%; /* Ändrat från 20vw till 90% för att krympa med sidans bredd */
+    max-width: 400px; /* Lägg till en maxbredd om du vill begränsa bredden på breda skärmar */
     text-align: center;
     overflow-wrap: break-word;
     word-wrap: break-word;
     box-sizing: border-box;
+    margin: 0 auto; /* Centrera elementet horisontellt */
 }
 
 fieldset { /* Stilar för fältuppsättningar */
@@ -531,10 +534,14 @@ table, th, td { /* Stilar för tabeller och dess celler */
 border : black solid 1px;
 border-collapse : collapse;
 padding : 8px;
+overflow-wrap: break-word;
+word-wrap: break-word;
+box-sizing: border-box;
 margin : auto;
 table-layout : fixed;
-width: 15vw;
+width: 18vw;
 max-width: 10vw;
+
 }
 
 tr:nth-child(1) { /* Specifika stilar för tabellrader */
@@ -557,12 +564,12 @@ td:nth-child(2), th:nth-child(4) {
 text-align : right;
 }
 
-.down-border3Color3 > :nth-child(n+3) {
+.down-borderColor3 > :nth-child(n+3) {
     grid-column: span 2;
   }
 
 /* Media query för skärmar som är max 768px breda */
-@media screen and(max-width: 768px) {
+@media (max-width: 768px) {
     .left, .right, .middle {
         font-size: 2rem;
     }
@@ -570,15 +577,13 @@ text-align : right;
     .left, .right, .middle {
         font-size: 1rem;
     }
-    
-    .Titleform2 {
-        font-size: 4vw; /* Mindre textstorlek för mindre skärmar */
-        width: 40vw; /* Anpassa bredden för mindre skärmar */
+    .down-borderColor3 {
+        flex-direction: column; /* Placera elementen i en kolumn när skärmen är mindre */
     }
 }
 
 /* Media query för skärmar som är max 480px breda */
-@media screen and(max-width: 480px) {
+@media (max-width: 480px) {
     .left, .right, .middle {
         font-size: 1.5rem;
     }
@@ -586,13 +591,15 @@ text-align : right;
     .left, .right, .middle {
         font-size: 0.8rem;
     }
-    .down-border2Color2,.down-border3Color3 {
+    .down-borderColor2{
         grid-template-columns: 1fr;
     }
+
 }
 
-@media screen and(max-width: 1400px) {
-    .down-border2Color2,.down-border3Color3 {
+
+@media (max-width: 1400px) {
+    .down-borderColor2,.down-borderColor3 {
         grid-template-columns: 1fr 1fr;
     }
 }
